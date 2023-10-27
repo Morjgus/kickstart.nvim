@@ -133,10 +133,12 @@ require('lazy').setup({
 
   {
     -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    'sainnhe/sonokai',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.g.sonokai_style = 'maia'
+      vim.g.sonokai_better_performance = 1
+      vim.cmd([[colorscheme sonokai]])
     end,
   },
 
@@ -147,7 +149,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'sonokai',
         component_separators = '|',
         section_separators = '',
       },
