@@ -224,8 +224,8 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'auto',
-        -- theme = 'sonokai',
+        -- theme = 'auto',
+        theme = 'sonokai',
         component_separators = '|',
         section_separators = '',
       },
@@ -234,7 +234,7 @@ require('lazy').setup({
 
   {
     -- Add indentation guides even on blank lines
-    'lukas-reineke/indent-blankline.nvim', main = "ibl",
+    'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help ibl`
     main = 'ibl',
